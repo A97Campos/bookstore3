@@ -37,13 +37,13 @@ Docker && docker-compose
 
    ```shell
    docker-compose up -d --build 
-   docker-compose exec web python manage.py migrate
+   docker-compose exec web /opt/pysetup/.venv/bin/python manage.py migrate
    ```
 
 5. Run tests inside of docker:
 
    ```shell
-   docker-compose exec web python manage.py test
+   docker-compose exec web /opt/pysetup/.venv/bin/python manage.py test
    ```
 
 
